@@ -1,5 +1,4 @@
 class QuestionsController < ApplicationController
-
   def show
     @question = Question.find(params[:id])
     @answers = @question.answers.order(created_at: :desc)
@@ -12,8 +11,8 @@ class QuestionsController < ApplicationController
   end
 
   private
+
   def question_params
     params.require(:question).permit(:email, :body)
   end
-
 end

@@ -13,5 +13,5 @@ class AnswersController < ApplicationController
     params.require(:answer).permit(:question_id, :email, :body)
   end
 
-  puts ['a','b','c'].join(',').upcase
+  puts ['a','b','c']
 end

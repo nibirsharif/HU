@@ -3,8 +3,7 @@ class HomeController < ApplicationController
     @question = Question.order(created_at: :desc).all
   end
 
-  def about
-  end
+  def about; end
 
   def temp
     redirect_to root_path
